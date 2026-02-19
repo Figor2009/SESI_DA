@@ -14,4 +14,6 @@ echo Configurações aplicadas com sucesso:
 git config --global user.name
 git config --global user.email
 
+REM that boy pull up in the machine
+
 exit
