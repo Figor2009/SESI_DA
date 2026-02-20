@@ -1,0 +1,14 @@
+body {
+    margin: 0px;
+}
+
+.menu {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
