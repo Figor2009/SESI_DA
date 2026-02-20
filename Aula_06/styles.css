@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+}
+
+.menu {
+    height: 111px;
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 50px;
+}
+
+.menu img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.menu p {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.campo-pesquisa {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.campo-pesquisa input {
+    width: 50%;
+    height: 50px;
+    border-radius: 50px;
+    padding-left: 20px;
+}
