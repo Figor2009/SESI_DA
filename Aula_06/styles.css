@@ -109,3 +109,41 @@ body {
     margin-right: 30px;
     border-radius: 40px;
 }
+
+.grupo-dicas {
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dicas {
+    padding: 50px;
+}
+
+.dica h1 {
+    font-size: 31px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.dica h2 {
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #5C5C5C;
+}
+
+.dica p {
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #5C5C5C;
+}
+
+.grupo-dicas img {
+    width: 536px;
+    height: 614px;
+    border-radius: 20px;
+    padding: 50px;
+}
