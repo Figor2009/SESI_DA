@@ -1,0 +1,9 @@
+body {
+    margin: 0px;
+}
+
+.Parte-esquerda {
+    width: 100px;
+    height: 832px;
+    background-color: blue;
+}
