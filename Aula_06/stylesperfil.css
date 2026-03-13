@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+}
+
+.header1 {
+    height:111px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header1 img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-left: 25px;
+}
+
+.header1 p {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-right: 25px;
+}
+
+.header2 {
+    height: 723px;
+    width: 300px;
+    background-color: black;
+    border-bottom-right-radius: 40px;
+}
