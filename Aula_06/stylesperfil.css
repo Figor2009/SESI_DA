@@ -3,7 +3,7 @@ body {
 }
 
 .header1 {
-    height:111px;
+    height: 15vh;
     width: 100%;
     background-color: black;
     display: flex;
@@ -12,7 +12,7 @@ body {
     align-items: center;
 }
 
-.header1 img{
+.header1 img {
     width: 80px;
     height: 80px;
     border-radius: 100%;
@@ -26,8 +26,9 @@ body {
 }
 
 .header2 {
-    height: 723px;
+    height: 85vh;
     width: 300px;
     background-color: black;
     border-bottom-right-radius: 40px;
+    border-top-right-radius: -40px
 }
