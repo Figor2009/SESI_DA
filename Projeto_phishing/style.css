@@ -5,14 +5,23 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+}
+
+#logo {
+    margin-top: 150px;
 }
 
 .card-login {
     background-color: #08687e;
-    max-width: 340px;
+    max-width: 400px;
+    width: 300px;
     padding: 10px 30px 45px 30px;
     border-radius: 5px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
 .card-login p{
@@ -23,13 +32,49 @@ body {
 
 .input-icon{
     display: flex;
+    height: 60px;
+    margin-bottom: 10px; 
+}
+
+.input-icon input, select{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    color: #9a9a9a;
 }
 
 .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #faa635;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 5px 0px 0px 5px;
+    width: 85px;
 }
 
 .icon img{
     width: 50%;
+}
+
+.card-login button {
+    height: 50px;
+    background-color: #0c9abe;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.card-login button:hover {
+    color: #faa635;
+    opacity: 0.89;
+}
+
+.card-login a {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
 }
