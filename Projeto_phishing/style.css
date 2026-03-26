@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Roboto";
+    src: url('./fontes/Roboto/Roboto-VariableFont_wdth\,wght.ttf')
+}
+
 body {
     background-image: url('./img/bg.jpg');
     background-size: cover;
@@ -28,6 +33,7 @@ body {
     font-size: 28px;
     color: white;
     text-transform: uppercase;
+    font-family: 'Roboto';
 }
 
 .input-icon{
