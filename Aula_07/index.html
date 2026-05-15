@@ -4,11 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Lista de Tarefas</title>
 </head>
 
 <body>
-    <h1>Bom dia</h1>
+    <h1 id="titulo">Bom dia</h1>
+    <input type="number" id="campo1">
+    <input type="number" id="campo2">
+    <button onclick="soma()">Somar</button>
+    <h2 id="resultado">Resultado: 0</h2>
+
+    <h1>Lista de Tarefas</h1>
+    <input type="text" id="campotarefa" placeholder="Digite uma nova tarefa">
+    <button id="adicionar" onclick="addItem()">Adicionar Tarefa</button>
+    <ul id="lista">
+        <li>Tarefa 1</li>
+        <li>Tarefa 2</li>
+        <li>Tarefa 3</li>
+    </ul>
+
+    <script src="script.js" defer></script>
 </body>
 
 </html>
