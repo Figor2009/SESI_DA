@@ -1,4 +1,4 @@
 # SESI_DA
 
 Unidade curricular de Desenvolvimento de Aplicativos.
-Sesi Senai 2026
+SESI/SENAI Dois Vizinhos Paraná, turma de 2026.
