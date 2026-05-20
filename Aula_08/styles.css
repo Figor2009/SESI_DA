@@ -1,0 +1,26 @@
+body {
+    margin: 0px;
+}
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 12px;
+}
+
+#orcamento-form {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#orcamento-form label {
+    margin: 6.7px;
+}
+
+#orcamento-form input {
+    height: 32.67px;
+    width: 232.67px;
+    outline-color: rgb(117, 154, 189);
+    border-radius: 6.7px;
+}

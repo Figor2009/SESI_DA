@@ -1,6 +1,6 @@
 function adicionarOrcamento() {
     var cliente = document.getElementById("cliente").value.trim();
-    var unidade = document.getElementById("unidade").value.trim();
+    var unidade = document.getElementById("mobile").value.trim();
     var descricao = document.getElementById("descricao").value.trim();
     var custo = parseFloat(document.getElementById("custo").value);
     var lista = document.getElementById("lista-orcamentos");
