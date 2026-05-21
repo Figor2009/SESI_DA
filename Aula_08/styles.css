@@ -14,13 +14,60 @@ h1 {
     align-items: center;
 }
 
-#orcamento-form label {
+#orcamento-form {
+    margin: 6.7px;
+}
+
+.group-input{
+    display: flex;
+    flex-direction: column;
     margin: 6.7px;
 }
 
 #orcamento-form input {
     height: 32.67px;
     width: 232.67px;
-    outline-color: rgb(117, 154, 189);
+    border: 1px solid rgb(117, 154, 189);
     border-radius: 6.7px;
+    /* outline: none; */
+    outline-color:  rgb(117, 154, 189);
+}
+
+
+#orcamento-form select {
+    height: 32.67px;
+    width: 232.67px;
+    border: 1px solid rgb(117, 154, 189);
+    border-radius: 6.7px;
+    /* outline: none; */
+    outline-color:  rgb(117, 154, 189);
+}
+
+#orcamento-form button {
+    height: 34.67px;
+    width: 128.67px;
+    border: 1px solid rgb(90, 126, 160);
+    border-radius: 6.7px;
+    outline-color:  rgb(117, 154, 189);
+    background-color: rgb(169, 213, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+option {
+  background: rgb(230, 243, 255);
+  padding: 10px;
+}
+
+option:last-of-type {
+  border-radius: 0 0 8px 8px;
+}
+
+option:nth-of-type(odd) {
+  background:  rgb(201, 229, 255);
+}
+
+option:hover,
+option:focus {
+  background: plum;
 }
