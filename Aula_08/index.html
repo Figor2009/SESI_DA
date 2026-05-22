@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Orçamento de Móveis</h1>
+    <div class="Titulo"><h1>Orçamento de Móveis</h1></div>
     <form id="orcamento-form" onsubmit="return adicionarOrcamento()">
         <div class="group-input">
             <label>Cliente</label>
@@ -17,7 +17,7 @@
         </div>
 
         <div class="group-input">
-            <label>Unidade </label>
+            <label>Móveis</label>
             <select name="móveis" id="mobile">
                 <option value="sofa">Sofa</option>
                 <option value="cadeira">Cadeira</option>
@@ -31,11 +31,16 @@
             <input type="text" id="descricao" placeholder="Descrição do móvel" required>
         </div>
 
+        <div class="group-input">
+            <label>Preço Unitário</label>
+            <input type="number" id="preco-unitario" placeholder="Valor em R$" step="0.01" min="0" required>
+        </div>
 
         <div class="group-input">
-            <label>Custo Total</label>
-            <input type="number" id="custo" placeholder="Valor em R$" required>
+            <label>Quantidade</label>
+            <input type="number" id="quantidade" placeholder="Quantidade" min="1" value="1" required>
         </div>
+
 
         <button type="submit">Adicionar</button>
     </form>
@@ -44,8 +49,10 @@
         <thead>
             <tr>
                 <th>Cliente</th>
-                <th>Unidade</th>
+                <th>Móveis</th>
+                <th>Quantia de móveis</th>
                 <th>Descrição</th>
+                <th>Preço Unitário</th>
                 <th>Custo Total</th>
             </tr>
         </thead>
