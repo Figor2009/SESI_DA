@@ -1,0 +1,20 @@
+CREATE DATABASE MERCADO;
+
+CREATE TABLE PRODUTO (
+    -> descricao varchar(100) not null,
+    -> preco DECIMAL (9, 2) not null,
+    -> id int auto_increment primary key not null );
+
+CREATE TABLE CLIENTE (
+    -> ID int AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    -> nome VARCHAR(255) NOT NULL,
+    -> telefone VARCHAR(20) NOT NULL);
+
+CREATE TABLE PEDIDO (
+    -> ID INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    -> quantidade INT NOT NULL,
+    -> constraint id_produto foreign key (id) references produto(id),
+    -> constraint id_cliente foreign key (id) references cliente(id));
+
+insert into produto (descricao, preco) values ("pao de queijo", 3.5),("grostoli",3.5),("fatia de pizza", 5),("sanduiche",7),("assado de frango", 7);
+
