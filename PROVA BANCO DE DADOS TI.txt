@@ -1,0 +1,118 @@
+1 - CREATE DATABASE HOTEL;
+USE HOTEL;
+
+CREATE TABLE QUARTOS (
+id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+numero VARCHAR(255) NOT NULL,
+capacidade INT NOT NULL,
+vista_mar BOOLEAN,
+diaria DECIMAL);
+
+CREATE TABLE CLIENTES (
+id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+nome VARCHAR(255) NOT NULL,
+email VARCHAR(255) NOT NULL,
+telefone VARCHAR(255) NOT NULL);
+
+CREATE TABLE RESERVAS (
+id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+quarto_id INT NOT NULL,
+cliente_id INT NOT NULL,
+data_entrada DATE NOT NULL,
+data_saida DATE NOT NULL,
+
+FOREIGN KEY (quarto_id) REFERENCES QUARTOS(id),
+FOREIGN KEY (cliente_id) REFERENCES CLIENTES(id));
+
+==================================================================================================================================
+2 -
+
+INSERT INTO QUARTOS(numero, capacidade, vista_mar, diaria) VALUES ("QUARTO 1", 1, false, 150),
+("QUARTO 2", 5, true, 750), 
+("QUARTO 3", 3, true, 450), 
+("QUARTO 4", 1, false, 150), 
+("QUARTO 5", 2, false, 300);
+
+INSERT INTO CLIENTES(nome, email, telefone) VALUES
+("Miguel", "miguel@teste.com", "(46)9 2520-3616"),
+("Alice", "alice@teste.com", "(46)9 3582-3775"),
+("Davi", "davi@teste.com", "(46)9 2232-1677"),
+("Julia", "julia@teste.com", "(46)9 3712-5526"),
+("Bruna", "bruna@teste.com", "(46)9 2515-0737");
+
+INSERT INTO RESERVAS(cliente_id, quarto_id, data_entrada, data_saida) VALUES
+(3, 1, '2023-05-01','2023-05-02'),
+(5, 2, '2023-05-06','2023-05-07'),
+(2, 3, '2023-04-14','2023-04-25'),
+(1, 4, '2023-01-01','2023-01-05'),
+(3, 5, '2023-02-20','2023-02-24');
+
+==================================================================================================================================
+3 -
+
+SELECT * FROM quartos WHERE vista_mar = true;
+
+SELECT nome, email FROM clientes;
+
+SELECT * FROM quartos WHERE capacidade > 2;
+
+SELECT * FROM clientes WHERE nome LIKE "B%";
+
+SELECT * FROM reservas WHERE data_entrada BETWEEN '2023-05-01' AND '2023-05-31';
+
+==================================================================================================================================
+4 -
+
+SELECT COUNT(*) FROM quartos;
+
+SELECT MIN(capacidade) FROM quartos;
+
+SELECT MAX(capacidade) FROM quartos;
+
+SELECT AVG(capacidade) FROM quartos;
+
+SELECT COUNT(vista_mar) FROM quartos WHERE vista_mar = true;
+
+==================================================================================================================================
+5 -
+
+SELECT * FROM quartos ORDER BY diaria DESC;
+
+SELECT * FROM quartos ORDER BY diaria ASC;
+
+==================================================================================================================================
+6 -
+
+ALTER TABLE reservas ADd cupom VARCHAR(5);
+
+UPDATE reservas SET cupom = "LGTSP" WHERE id = 1;
+
+UPDATE reservas SET cupom = "XGTSP" WHERE id = 2;
+
+UPDATE reservas SET cupom = "GTSQL" WHERE id = 4;
+
+==================================================================================================================================
+7 -
+
+SELECT * FROM reservas JOIN clientes ON clientes.id = reservas.cliente_id;
+
+==================================================================================================================================
+8 -
+
+SELECT * FROM reservas JOIN quartos ON quartos.id = reservas.quarto_id;
+
+==================================================================================================================================
+9 -
+
+DELETE FROM reservas WHERE id in (3, 4);
+
+==================================================================================================================================
+10 -
+
+DROP TABLE reservas;
+
+DROP TABLE clientes;
+
+DROP TABLE quartos;
+
+DROP DATABASE HOTEL;
